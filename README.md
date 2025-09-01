@@ -1,82 +1,37 @@
-# 📘 Atividade – Testes de Software
+# Pesquisa sobre Frameworks de Teste
 
-## 📌 Descrição
-Esta atividade tem como objetivo explorar conceitos e práticas relacionadas a **testes de software**, com foco em **testes unitários** e nas abordagens de **Caixa Branca** e **Caixa Preta**.  
+## 🧪 TestNG (Java)
 
-O trabalho envolve a escolha de **duas bibliotecas/frameworks de testes unitários** da mesma linguagem de programação para análise comparativa, bem como uma pesquisa sobre diferentes abordagens de testes aplicadas no processo de desenvolvimento de software.  
+Inspirado no JUnit, o TestNG ("Test Next Generation") foi criado para ser mais poderoso, introduzindo funcionalidades que não existiam em seu predecessor e que são especialmente úteis em cenários de testes mais complexos.
 
----
+### ✅ Pontos Positivos
+- 🔖 **Anotações Avançadas e Flexíveis**: Oferece controle granular com `@BeforeSuite`, `@AfterSuite`, `@BeforeGroups`, `@AfterGroups`.
+- 🗂️ **Agrupamento de Testes**: Facilita a criação de suítes que executam apenas subconjuntos de testes.
+- 🔗 **Testes Dependentes**: Permite definir dependências entre métodos de teste.
+- ⚡ **Execução Paralela**: Suporte nativo para reduzir o tempo total da suíte.
+- 📊 **Parametrização Nativa**: `@DataProvider` facilita Data-Driven Testing.
+- 📑 **Relatórios em HTML**: Geração automática e detalhada de resultados.
 
-## 📝 Estrutura da Atividade
-
-### 🔹 1. Testes Unitários
-Os testes unitários são fundamentais para garantir que cada **componente individual do código** funcione conforme o esperado.  
-
-- **Tarefas:**
-  - Escolher **duas bibliotecas/frameworks de testes unitários** da mesma linguagem de programação.  
-  - Avaliar os **pontos positivos e negativos** de cada uma delas.  
-  - Demonstrar **exemplos práticos de utilização**, destacando as diferenças na implementação e nos resultados obtidos.  
-
-- **Exemplos de bibliotecas/frameworks de testes unitários**:  
-  - **Java:** JUnit, TestNG  
-  - **Python:** Unittest, Pytest  
-  - **JavaScript:** Mocha, Jest, React Testing Library  
-  - **C#:** NUnit, xUnit  
+### ❌ Pontos Negativos
+- 📈 **Curva de Aprendizagem**: Arquivos XML e recursos avançados exigem mais esforço inicial.
+- 🛠️ **Configuração Mais Complexa**: Verbosa para projetos simples.
+- 👥 **Comunidade Menor que JUnit**: Pode dificultar achar exemplos e soluções específicas.
 
 ---
 
-### 🔹 2. Abordagens de Teste (Caixa Branca e Caixa Preta)
-Além dos testes unitários, diversas abordagens são aplicadas no ciclo de desenvolvimento de software.  
+## 🧩 NUnit (C#)
 
-- **Tarefas:**
-  - Realizar uma **pesquisa bibliográfica** sobre **Testes de Caixa Branca** e **Testes de Caixa Preta**.  
-  - Demonstrar as **diferenças entre as duas abordagens**.  
-  - Explicar **como podem ser aplicadas** no processo de desenvolvimento de software.  
-  - Apontar **ferramentas, bibliotecas e frameworks** que apoiam cada abordagem.  
+O NUnit é um dos frameworks de teste unitário mais antigos e respeitados do ecossistema .NET. Originalmente portado do JUnit, evoluiu para se tornar idiomático e poderoso para C#.
 
----
+### ✅ Pontos Positivos
+- 🏆 **Maturidade e Estabilidade**: Framework sólido, confiável e com grande base de usuários.
+- 🧩 **Conjunto Rico de Atributos**: [Test], [TestCase], [SetUp], [TearDown], [TestFixture], entre outros.
+- 🧪 **Excelente Suporte a Testes Parametrizados**: `TestCase` simples e poderoso.
+- ⚡ **Execução Paralela**: Suporte robusto para acelerar feedback.
+- 🔗 **Boa Integração**: Funciona bem com Visual Studio, CLI e CI/CD.
+- 🛠️ **Extensibilidade**: Criação de atributos e assertions customizados.
 
-## 📊 Entrega e Apresentação
-- **Formato:**  
-  - Entrega em documento escrito (com exemplos e referências).  
-  - Apresentação em grupo.  
-
-- **Grupos:**  
-  - Mínimo: 4 alunos  
-  - Máximo: 6 alunos  
-
-- **Data de Entrega e Apresentação:**  
-  - **04/09/2025**  
-
----
-
-## 📂 Estrutura Sugerida do Documento
-1. **Introdução**
-2. **Testes Unitários**
-   - Definição e importância  
-   - Framework/Biblioteca 1: avaliação + exemplo  
-   - Framework/Biblioteca 2: avaliação + exemplo  
-   - Comparação entre ambas  
-3. **Abordagens de Teste**
-   - Definição de Caixa Branca  
-   - Definição de Caixa Preta  
-   - Diferenças entre as abordagens  
-   - Aplicações práticas no desenvolvimento  
-   - Ferramentas e frameworks relacionados  
-4. **Conclusão**
-5. **Referências Bibliográficas**
-
----
-
-## 📚 Referências Iniciais
-- Pressman, R. S. **Engenharia de Software: Uma Abordagem Profissional.**  
-- Sommerville, I. **Engenharia de Software.**  
-- Documentações oficiais das bibliotecas citadas:  
-  - [JUnit](https://junit.org/)  
-  - [Pytest](https://docs.pytest.org/)  
-  - [Mocha](https://mochajs.org/)  
-  - [NUnit](https://nunit.org/)  
-
----
-
-✔️ Este README servirá como guia para a organização e execução da atividade.
+### ❌ Pontos Negativos
+- ✍️ **Sintaxe Mais Verbosa**: Exige mais marcações que o xUnit.net, por exemplo.
+- 🐢 **Ritmo de Inovação**: Evolui mais lentamente que frameworks modernos.
+- 🔄 **Limitações em Async**: Funciona, mas xUnit traz experiência mais fluida para `async/await`.
