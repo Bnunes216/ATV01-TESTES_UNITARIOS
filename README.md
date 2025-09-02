@@ -19,9 +19,9 @@ Inspirado no JUnit, o TestNG ("Test Next Generation") foi criado para ser mais p
 
 ---
 
-# 🧪 Mockito (Java)
+## 🧪 Mockito (Java)
 
-## ✅ Pontos Positivos
+### ✅ Pontos Positivos
 - **Isolamento de Unidades** → Permite simular dependências externas (BD, APIs, etc.), focando apenas na lógica da classe testada.  
 - **Sintaxe Limpa e Legível** → API fluente com métodos como `when(...)`, `thenReturn(...)` e `verify(...)`, fáceis de entender e manter.  
 - **Facilita Testes de Cenários Difíceis** → Simula falhas de rede, exceções e respostas inesperadas sem precisar de ambiente real.  
@@ -29,7 +29,7 @@ Inspirado no JUnit, o TestNG ("Test Next Generation") foi criado para ser mais p
 - **Verificação de Comportamento (Behavior Verification)** → Além do *stubbing*, permite verificar chamadas de métodos em mocks.  
 - **Excelente Integração** → Funciona de forma natural com **JUnit** e **TestNG**, sendo o framework de mocking mais popular no ecossistema Java.  
 
-## ❌ Pontos Negativos
+### ❌ Pontos Negativos
 - **Versões Antigas Instáveis** → Não suportavam métodos estáticos, construtores ou privados. As versões novas (com *mockito-inline*) adicionaram suporte, mas ainda pode ser complexo.  
 - **Risco de Testes Acoplados à Implementação** → Uso excessivo de `verify` pode gerar testes frágeis que quebram em refatorações sem mudar o resultado final.  
 - **Pode Mascarar Problemas de Integração** → Por isolar demais, não detecta falhas que só aparecem quando os componentes reais interagem — sendo necessário complementar com testes de integração.  
