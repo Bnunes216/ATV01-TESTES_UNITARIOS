@@ -19,19 +19,17 @@ Inspirado no JUnit, o TestNG ("Test Next Generation") foi criado para ser mais p
 
 ---
 
-## 🧩 NUnit (C#)
+# 🧪 Mockito (Java)
 
-O NUnit é um dos frameworks de teste unitário mais antigos e respeitados do ecossistema .NET. Originalmente portado do JUnit, evoluiu para se tornar idiomático e poderoso para C#.
+## ✅ Pontos Positivos
+- **Isolamento de Unidades** → Permite simular dependências externas (BD, APIs, etc.), focando apenas na lógica da classe testada.  
+- **Sintaxe Limpa e Legível** → API fluente com métodos como `when(...)`, `thenReturn(...)` e `verify(...)`, fáceis de entender e manter.  
+- **Facilita Testes de Cenários Difíceis** → Simula falhas de rede, exceções e respostas inesperadas sem precisar de ambiente real.  
+- **Acelera a Execução dos Testes** → Substitui dependências lentas por *mocks* que retornam instantaneamente.  
+- **Verificação de Comportamento (Behavior Verification)** → Além do *stubbing*, permite verificar chamadas de métodos em mocks.  
+- **Excelente Integração** → Funciona de forma natural com **JUnit** e **TestNG**, sendo o framework de mocking mais popular no ecossistema Java.  
 
-### ✅ Pontos Positivos
-- 🏆 **Maturidade e Estabilidade**: Framework sólido, confiável e com grande base de usuários.
-- 🧩 **Conjunto Rico de Atributos**: [Test], [TestCase], [SetUp], [TearDown], [TestFixture], entre outros.
-- 🧪 **Excelente Suporte a Testes Parametrizados**: `TestCase` simples e poderoso.
-- ⚡ **Execução Paralela**: Suporte robusto para acelerar feedback.
-- 🔗 **Boa Integração**: Funciona bem com Visual Studio, CLI e CI/CD.
-- 🛠️ **Extensibilidade**: Criação de atributos e assertions customizados.
-
-### ❌ Pontos Negativos
-- ✍️ **Sintaxe Mais Verbosa**: Exige mais marcações que o xUnit.net, por exemplo.
-- 🐢 **Ritmo de Inovação**: Evolui mais lentamente que frameworks modernos.
-- 🔄 **Limitações em Async**: Funciona, mas xUnit traz experiência mais fluida para `async/await`.
+## ❌ Pontos Negativos
+- **Versões Antigas Instáveis** → Não suportavam métodos estáticos, construtores ou privados. As versões novas (com *mockito-inline*) adicionaram suporte, mas ainda pode ser complexo.  
+- **Risco de Testes Acoplados à Implementação** → Uso excessivo de `verify` pode gerar testes frágeis que quebram em refatorações sem mudar o resultado final.  
+- **Pode Mascarar Problemas de Integração** → Por isolar demais, não detecta falhas que só aparecem quando os componentes reais interagem — sendo necessário complementar com testes de integração.  
