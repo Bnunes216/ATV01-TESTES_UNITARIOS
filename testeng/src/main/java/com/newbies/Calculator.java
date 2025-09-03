@@ -1,4 +1,4 @@
-package asshole;
+package com.newbies;
 
 public class Calculator {
     

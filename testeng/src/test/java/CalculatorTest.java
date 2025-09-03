@@ -1,8 +1,8 @@
-/* 
-package asshole;
 
-import org.testng.annotations.Test;
+package main.java.com.newbies;
+
 import static org.testng.Assert.assertEquals;
+import org.testng.annotations.Test;
 
 public class CalculatorTest{
 
@@ -17,4 +17,4 @@ public class CalculatorTest{
         int resultado = 2 * 3;
         assertEquals(resultado, 6, "A multiplicação deve ser 6");
     }
-} */
+}
